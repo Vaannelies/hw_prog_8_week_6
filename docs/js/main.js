@@ -124,6 +124,7 @@ class PirateShip extends Ship {
             this.horn.unregister(this);
             this.registered = false;
             this.style.backgroundImage = "url(images/ship-unregistered.png)";
+            this.captain.style.backgroundImage = "url(images/emote_sleeps.png)";
         }
         console.log("Clicked");
     }
