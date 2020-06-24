@@ -5,8 +5,16 @@ class MessageBoard extends GameObject{
     // Fields
     // private messages : HTMLElement[] = []
 
-    public constructor() {
+    private static instance : MessageBoard
+
+    private constructor() {
         super()
+    }
+
+    public static getInstance() : MessageBoard {
+        if(!MessageBoard.instance) MessageBoard.instance = new MessageBoard()
+        return(MessageBoard.instance)
+
     }
     
     public addMessage(text : string) {

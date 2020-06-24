@@ -8,10 +8,10 @@ class Main {
 
         for (let i = 0; i < 10; i++) {
             // Observers
-            this.ships.push(new PirateShip())
+            this.ships.push(new PirateShip(horn))
         }
 
-        let messageboard : MessageBoard = new MessageBoard()
+        let messageboard : MessageBoard = MessageBoard.getInstance()
     }
 }
 
